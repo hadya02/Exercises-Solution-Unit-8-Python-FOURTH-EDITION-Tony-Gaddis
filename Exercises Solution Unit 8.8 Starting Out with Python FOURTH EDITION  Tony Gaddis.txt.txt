@@ -1,0 +1,16 @@
+Sentence Capitalizer
+Write a program with a function that accepts a string as an argument and returns a copy
+of the string with the first character of each sentence capitalized. For instance, if the argument is “hello. my name is Joe. what is your name?” the function should return the string
+“Hello. My name is Joe. What is your name?” The program should let the user enter
+a string and then pass it to the function. The modified string should be displayed.
+
+def main():
+    sentence=input("enter your sentence : ")
+    capitalizer=(sentence)
+def capitalizer(sentence):
+    sentence=sentence.spilt()
+    for word in sentence:
+        first_word=word[0].upper()
+        whole_word=first_word + word[1:]
+        print(whole_word,end='')
+main()

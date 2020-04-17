@@ -1,0 +1,14 @@
+Name Display
+Write a program that gets strings containing a person’s first and last name as separate
+values, and then displays their “initials”, “name in address book”, and “username”. For
+example, if the user enters a first name of “John” and a last name of “Smith”, the program
+should display “J.S.”, “John SMITH”, and “jsmith”.
+
+
+def main():
+    name=input("enter your name :")
+    last_name=input("enter your laqst name:")
+    print("Initials:",name[0].upper()+"."+last_name[0].upper())
+    print("Add book name :",name[0].upper()+name[1:].lower()+""+last_name.upper())
+    print("user name :",name[0].lower()+last_name.lower())
+main()

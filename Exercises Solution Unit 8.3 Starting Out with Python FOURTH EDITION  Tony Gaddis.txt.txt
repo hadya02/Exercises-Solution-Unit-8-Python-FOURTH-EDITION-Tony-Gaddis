@@ -1,0 +1,12 @@
+Date Printer
+Write a program that reads a string from the user containing a date in the form mm/dd/yyyy.
+It should print the date in the format March 12, 2018.
+
+def main():
+    date=input("enter a date in format mm/dd/yy :")
+    months=["January","February","March","April","May",
+            "June","July","August","September","Octobar","November","December"]
+    date=date.split("/")
+    convert_month=months[int(date[0])-1]
+    print(convert_month+""+date[1]+""+date[2])
+main()
